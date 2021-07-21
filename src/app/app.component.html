@@ -1,0 +1,12 @@
+<script src="node_modules/recordrtc/RecordRTC.js"></script>
+<h1>{{title}}</h1>
+<app-pad></app-pad>
+
+<div class="recording">
+<button (click)="initiateRecording()" class="btn btn-danger" *ngIf="!recording"> Start Recording </button>
+  <button (click)="stopRecording()" class="btn btn-danger" *ngIf="recording"> Stop Recording </button>
+  <div class="clearfix"></div>
+  <audio controls="" *ngIf="url">
+      <source [src]="sanitize(url)" type="audio/wav">
+  </audio>
+</div>

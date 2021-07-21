@@ -1,0 +1,46 @@
+
+.play_stop{text-align: center; margin-bottom: 20px; margin-top: 40px; margin-left:10px;margin-right: 10px;}
+h2 { color: #CF0000; font-family:fantasy, cursive; font-size: 30px; line-height: 20px; font-weight:normal; margin-bottom: 40px; margin-top: 40px; text-align:center;  }
+.play_stop button{
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  color:white;
+}
+.play_stop button:hover{
+  color: #dc3545;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  padding: 10px;
+  grid-gap: 50px 100px;
+}
+.grid-item {
+  background-color: white;
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: #dc3545;
+background-color: transparent;
+background-image: none;
+border-color: #890596;
+font-family: "Great Vibes", cursive;
+}
+.grid-item:hover{
+  background-color: #dc3545;
+  color:white;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

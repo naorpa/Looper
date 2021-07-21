@@ -1,0 +1,15 @@
+<h2>Our Music Samples to Control:</h2>
+
+
+<div class="grid-container">
+  <div *ngFor="let pad of pads" >
+    <div [ngClass]="{'blink_me': pad.state==true}" class="grid-item blink_me" (click)="onSelect(pad)">{{pad.name}}</div>
+  </div>
+</div>
+
+
+
+<div class="play_stop">
+<button class="btn btn-outline-dark" (click)="continueLoop()">Play</button>
+<button class="btn btn-outline-dark" (click)="stopLoop()">Pause</button>
+  </div>
